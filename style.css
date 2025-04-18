@@ -1,0 +1,212 @@
+* {
+  font-family: Nunito, sans-serif;
+  color: aliceblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(68, 30, 205);
+}
+
+.top-nav {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top-nav a {
+  text-decoration: none;
+}
+
+.top-nav :hover {
+  color: rgb(68, 30, 205);
+  background-color: aliceblue;
+  padding: 2px;
+  border-radius: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#hamburger {
+  display: none;
+}
+
+.account-nav {
+  margin-right: 25px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.account-nav a {
+  text-decoration: none;
+}
+
+.account-nav :hover {
+  color: rgb(68, 30, 205);
+  background-color: aliceblue;
+  padding: 2px;
+  border-radius: 2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title-and-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 30vw;
+}
+
+#title {
+  color: rgb(68, 30, 205);
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+#search-button {
+  color: aliceblue;
+  background-color: rgb(68, 30, 205);
+}
+
+#financing {
+  text-decoration: none;
+  background-color: red;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.main-content {
+  display: flex;
+  gap: 5px;
+}
+
+.side-nav {
+  width: 25vw;
+}
+
+.side-nav ul {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.side-nav ul :hover {
+  color: rgb(68, 30, 205);
+  background-color: rgb(103, 179, 246);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.side-nav li {
+  background-color: rgb(68, 30, 205);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.side-nav a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 200px;
+  max-height: 150px;
+}
+
+h2 {
+  background-color: rgb(68, 30, 205);
+  border-radius: 3px;
+  color: aliceblue;
+  text-align: center;
+}
+
+p {
+  color: black;
+  text-align: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.product-footer {
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  background-color: rgb(68, 30, 205);
+  color: aliceblue;
+}
+
+h3 {
+  margin: 5px;
+}
+
+.inventory {
+  width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 5px;
+}
+
+.footer-content {
+  margin-top: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(68, 30, 205);
+}
+
+.ul-titles {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 720px) {
+  .title-and-search {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-nav {
+    width: 90vw;
+  }
+  .inventory {
+    width: 90vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2 1fr;
+    gap: 5px;
+  }
+  .account-nav {
+    display: none;
+  }
+  #hamburger {
+    display: inline;
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+  }
+}
