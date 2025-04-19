@@ -21,6 +21,10 @@ header {
   align-items: center;
   gap: 10px;
 }
+.top-nav li {
+  padding: 2px;
+}
+
 .top-nav a {
   text-decoration: none;
 }
@@ -51,8 +55,7 @@ header {
 
 .account-nav :hover {
   color: rgb(68, 30, 205);
-  background-color: aliceblue;
-  padding: 2px;
+  background-color: rgb(122, 190, 249);
   border-radius: 2px;
   text-decoration: underline;
   cursor: pointer;
@@ -178,6 +181,17 @@ h3 {
 .ul-titles {
   font-size: 25px;
   text-decoration: underline;
+}
+
+.shopping-cart {
+  height: 30px;
+  background-color: rgb(208, 104, 30);
+  padding: 4px;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+.product-footer a :hover {
+  background-color: red;
 }
 
 @media only screen and (max-width: 720px) {
